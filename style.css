@@ -1,71 +1,36 @@
-
-body,
-html {
-  width: 100%;
-  height: 100%; 
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+	font-family: 'Quicksand', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 100vh;
+	color: black;
+	background-size: cover;
 }
 
-hr {
-  max-width: 65px;
-  border-width: 2px;
-  border-color: #5e8e99; 
+#time {
+	font-size: 8rem;
 }
 
-.faded {
-  color: rgba(255, 255, 255, 0.8); 
+h1 {
+	margin-bottom: 3rem;
 }
 
-header.startup {
-  background-position: center;
-  background-image: url("header.jpg");
-  background-size: cover;
-  height: 100%;
+h2 {
+	margin-bottom: 0.5rem;
+	opacity: 0.8;
 }
 
-header.startup hr {
-  margin-top: 200px;
-  margin-bottom: 30px; 
+@media(max-width: 700px) {
+	#time {
+		font-size: 6rem;
+	}
 }
-
-header.startup h1 {
-  font-family: Arial;
-  background: -moz-linear-gradient(45deg, #96F5FF 0%, #96F5FF 25%, #FFB482 36%, #DFDBFF 51%, #147AFF 76%, #147AFF 100%); /* ff3.6+ */
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #96F5FF), color-stop(25%, #96F5FF), color-stop(36%, #FFB482), color-stop(51%, #DFDBFF), color-stop(76%, #147AFF), color-stop(100%, #147AFF)); /* safari4+,chrome */
-  background: -webkit-linear-gradient(45deg, #96F5FF 0%, #96F5FF 25%, #FFB482 36%, #DFDBFF 51%, #147AFF 76%, #147AFF 100%); /* safari5.1+,chrome10+ */
-  background: -o-linear-gradient(45deg, #96F5FF 0%, #96F5FF 25%, #FFB482 36%, #DFDBFF 51%, #147AFF 76%, #147AFF 100%); /* opera 11.10+ */
-  background: -ms-linear-gradient(45deg, #96F5FF 0%, #96F5FF 25%, #FFB482 36%, #DFDBFF 51%, #147AFF 76%, #147AFF 100%); /* ie10+ */
-  background: linear-gradient(45deg, #96F5FF 0%, #96F5FF 25%, #FFB482 36%, #DFDBFF 51%, #147AFF 76%, #147AFF 100%); /* w3c */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#147AFF', endColorstr='#96F5FF',GradientType=1 ); /* ie6-9 */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 60px;
-  line-height: 50px;
-}
-
-.btn {
-  font-weight: 700;
-  text-transform: uppercase;
-  border-radius: 300px;
-  font-family: 'Arial', sans-serif;
-}
-
-.btn-xl {
-  padding: 1rem 2rem; 
-}
-
-.btn-primary {
-  background-color: #2b476d;
-  border-color: #5e8e99; 
-}
-
-.btn-primary:hover {
-  background-color: #2b476d;
-  border-color: #eaf3ff;
-  border-width: 5px;
-  cursor: pointer;
-}
-  
